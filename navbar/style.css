@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: hwb(206 95% 3%);
+  color: hsl(209, 61%, 16%);
+  line-height: 1.5;
+  font-size: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle{
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+.links a{
+font-size:1rem;
+padding: 0.5rem 1rem;
+}
+.links a:hover {
+  padding-left: 1.5rem;
+}
+
+/* Hides the Links */
+.links {
+  height: 0;
+  overflow: hidden;
+}
+/* to show using Js */
+.show-links {
+  height: 10rem;
+}
+
+.social-icons {
+  display: none;
+}
+
+@media screen and (min-width:800px){
+  .nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle{
+    display: none;
+  }
+  .links a {
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    background: transparent;
+  }
+  .links{
+    height: auto;
+    font-size: 3rem;
+    display: flex;
+  }
+  .social-icons {
+    font-size: 1rem;
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+  }
+
+
+}
+
+
+
+
